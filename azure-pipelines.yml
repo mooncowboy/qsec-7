@@ -11,7 +11,7 @@ variables:
   sourceFolder: '.\src\TextService.sln'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration) {sourceFolder} 
+- script: dotnet build --configuration $(buildConfiguration) $(sourceFolder) 
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
