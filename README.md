@@ -8,9 +8,9 @@
 - If there's no tickets or open requests - please read the overall statements and open a new ticket you can work with
 
 # Test environment
- - https://hsf-sec7-test.azurewebsites.net 
+ - https://hsf-qsec-test.azurewebsites.net
 # Production Environment 
- - https://hsf-sec7.azurewebsites.net 
+ - https://hsf-qsec.azurewebsites.net
  
 # Build 
  - https://dev.azure.com/hsfdev/QSec-7/_build?definitionId=22
