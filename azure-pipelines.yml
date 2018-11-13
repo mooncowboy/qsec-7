@@ -8,7 +8,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  sourceFolder: '.\src'
+  sourceFolder: 'src'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
