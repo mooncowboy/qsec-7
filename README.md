@@ -10,7 +10,7 @@
 # Test environment
  - https://hsf-sec7-test.azurewebsites.net 
 # Production Environment 
- - https://hsf-sec7-test.azurewebsites.net 
+ - https://hsf-sec7.azurewebsites.net 
  
 # Build 
  - https://dev.azure.com/hsfdev/QSec-7/_build?definitionId=22
