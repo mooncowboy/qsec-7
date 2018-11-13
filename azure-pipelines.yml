@@ -8,13 +8,10 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  workingDirectory: 'src' 
-  
-steps:
-- script: dotnet restore
-  displayName: 'dotnet restore'
+  sourceFolder: '.\src\TextService.sln'
 
-- script: dotnet build --configuration $(buildConfiguration)
+steps:
+- script: dotnet build --configuration $(buildConfiguration) $(sourceFolder) 
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
