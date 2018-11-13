@@ -8,19 +8,17 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-
+  workingDirectory: 'src' 
+  
 steps:
 - script: dotnet restore
-  workingDirectory: 'src'
   displayName: 'dotnet restore'
 
 - script: dotnet build --configuration $(buildConfiguration)
-  workingDirectory: 'src'
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet test $(buildConfiguration)'
-  workingDirectory: 'src'
 
   inputs:
     command: test
@@ -28,7 +26,6 @@ steps:
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
 - task: DotNetCoreCLI@2
-  workingDirectory: 'src'
   displayName: 'dotnet publish $(buildConfiguration)'
   inputs:
     command: publish
