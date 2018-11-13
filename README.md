@@ -1,5 +1,8 @@
-# How to contribute to this project
+# Project status:
+ 
+![image](https://dev.azure.com/hsfdev/QSec-7/_apis/build/status/haraldfianbakken.qsec-7)
 
+# How to contribute to this project
 - Fork this repository
 - Check open issues
 - Create a feature branch with the ticket # of the bug you're working on 
@@ -14,10 +17,9 @@
  
 # Build 
  - https://dev.azure.com/hsfdev/QSec-7/_build?definitionId=22
-# Release 
- - 
  
-![image](https://dev.azure.com/hsfDev/QSec-7/_apis/build/repos/{repoType}/badge?api-version=4.1-preview.1)
+# Release 
+ - https://dev.azure.com/hsfdev/QSec-7/_release?view=mine&definitionId=1
 
 
 # The project mission 
