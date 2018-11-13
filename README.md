@@ -1,6 +1,7 @@
 # Project status:
  
-![image](https://dev.azure.com/hsfdev/QSec-7/_apis/build/status/haraldfianbakken.qsec-7)
+![Build-Github-Pipeline](https://dev.azure.com/hsfdev/QSec-7/_apis/build/status/haraldfianbakken.qsec-7)
+![Build-Master-Stable]https://dev.azure.com/hsfdev/QSec-7/_apis/build/status/Build-master-stable
 
 # How to contribute to this project
 - Fork this repository
