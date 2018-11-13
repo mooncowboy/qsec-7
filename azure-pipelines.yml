@@ -8,21 +8,23 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  sourceFolder: '.\src\TextService.sln'
+  sourceFolder: '.\src'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration) $(sourceFolder) 
+- script: dotnet build --configuration $(buildConfiguration)
+  workingDirectory: $(sourceFolder) 
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
+  workingDirectory: $(sourceFolder)
   displayName: 'dotnet test $(buildConfiguration)'
-
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
 - task: DotNetCoreCLI@2
+  workingDirectory: $(sourceFolder)
   displayName: 'dotnet publish $(buildConfiguration)'
   inputs:
     command: publish
