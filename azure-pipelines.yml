@@ -8,7 +8,8 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  sourceLibrary: '.\src\TextService.sln'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet build --configuration $(buildConfiguration) {sourceLibrary} 
   displayName: 'dotnet build $(buildConfiguration)'
