@@ -17,7 +17,7 @@
 # Release 
  - 
  
-![image](https://dev.azure.com/hsfDev/QSec-7/_apis/build/repos/{repoType}/badge?api-version=4.1-preview.1)
+![image](https://dev.azure.com/hsfdev/QSec-7/_apis/build/status/haraldfianbakken.qsec-7)
 
 
 # The project mission 
