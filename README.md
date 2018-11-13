@@ -5,6 +5,7 @@
 - Create a feature branch with the ticket # of the bug you're working on 
 - Please update the ticket to let others know you're working on it. 
 - Before opening a pull request - please make sure you've merged the latest changes from upstream
+- If there's no tickets or open requests - please read the overall statements and open a new ticket you can work with
 
 # Test environment
  - https://hsf-sec7-test.azurewebsites.net 
